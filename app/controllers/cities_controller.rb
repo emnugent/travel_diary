@@ -10,6 +10,7 @@ class CitiesController < ApplicationController
   # GET /cities/1
   # GET /cities/1.json
   def show
+    @reviews = @city.reviews
   end
 
   # GET /cities/new
@@ -69,6 +70,6 @@ class CitiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def city_params
-      params.fetch(:city, {}).permit(:name)
+      params.fetch(:city, {}).permit(:name, :picture)
     end
 end

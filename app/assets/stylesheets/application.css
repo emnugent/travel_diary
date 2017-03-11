@@ -13,3 +13,77 @@
  *= require_tree .
  *= require_self
  */
+body{
+ background-color: #EAEAEA;
+ margin-top: 0;
+}
+
+#content, .content-grid, .review-body, .page-image img{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hl.header, .content-title, hl.page-title{
+  font-family: "Courier New", serif;
+  text-align: center;
+}
+
+hl.header, hl.page-title{
+  font-weight: 100;
+  color: #968EAA;
+}
+
+hl.header{
+  font-size: 5em;
+}
+
+#content{
+  width: 80%;
+  background-color: #FFF;
+}
+
+.content-grid{
+  width: 70%;
+}
+
+.content-block{
+  display: inline-block;
+  margin-top: 2em;
+  margin-left: 1.5em;
+}
+
+.content-image img{
+  border: 1em solid #D6DEED;
+  border-radius: 1em;
+}
+
+.content-title{
+  font-weight: 150;
+  font-size: 2em;
+  margin-top: 0.5em;
+  color: #67646F;
+}
+
+hl.page-title{
+  font-size: 3em;
+  padding-top: 0.7em;
+  margin-bottom: 1em;
+}
+
+.page-image img{
+  display: block;
+}
+
+.review-body{
+  width: 80%;
+  margin-top: 3em;
+  margin-bottom: 10em;
+  padding: 4em;
+
+  font-weight: 100;
+  font-size: 1em;
+  color: #323232;
+
+  border: 0.1em dashed #D1D1D1;
+  border-radius: 1em;
+}

@@ -1,4 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+<hl class="page-title"><%= @review.title %></hl>
+<div class="page-image"><%= image_tag @review.picture.url (:medium) %></div>
+
+<div class="review-body"><%= @review.body %></div>
+
 <%= link_to 'Edit', edit_review_path(@review) %> |
 <%= link_to 'Back', reviews_path %>
